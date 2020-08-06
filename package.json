@@ -1,0 +1,23 @@
+{
+  "name": "wasm",
+  "version": "1.0.0",
+  "description": "some boosted arithmetic functions",
+  "main": "index.js",
+  "author": "Andrey Sakharov <a.sakharov@biletix.ru>",
+  "license": "MIT",
+  "keywords": ["wasm"],
+  "scripts": {
+    "build": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --validate --optimize -d index.d.ts"
+  },
+  "homepage": "https://github.com/muturgan/wasm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muturgan/wasm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muturgan/wasm/issues"
+  },
+  "devDependencies": {
+    "assemblyscript": "github:AssemblyScript/assemblyscript"
+  }
+}
